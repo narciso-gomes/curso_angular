@@ -1,0 +1,30 @@
+<div class="container" id="main">
+
+    <h1>Event Binding</h1>
+    <hr>
+    <p>Envent Binding com evento (click)="metodo()"</p>
+    <button class="btn btn-primary" (click)="alertOla()">Dizer olá.</button>
+    <hr>
+
+    <p>(keyup)="metodo($event)"</p>
+    <input type="text" class="form-control" (keyup)="onKeyUp($event)">
+    <p><b>Valor atual: </b>{{ valorOnKeyUpEvent }}</p>
+    <hr>
+
+    <p>(keyup.enter)="metodo($event)"</p>
+    <input type="text" class="form-control" (keyup.enter)="onKeyUpEnter($event.target.value)">
+    <p><b>Valor onKeyUpEnter: </b> {{ valorOnKeyUpEnter }}</p>
+    <hr>
+
+    <p>(blur)="metodo($event)"</p>
+    <input #campoInputBlur type="text" class="form-control" (blur)="blurEvent(campoInputBlur.value)">
+    <p><b>Valor blurEvent: </b>{{ valorBlurEvent }}</p>
+    <hr>
+
+    <p>mouseover() e mouseout()</p>
+    <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver" [class.offTransition]="!isMouseOver">Passe o mouse
+        sobre mim</span>
+    <br><br>
+
+
+</div>

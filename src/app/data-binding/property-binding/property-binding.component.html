@@ -1,0 +1,14 @@
+<div class="container" id="main">
+    <h3>Property Binding</h3>
+    <hr>
+
+    <button (click)="widthImage(1)" (onmousedown)="widthImage(1)">+</button>
+    <button (click)="widthImage(0)">-</button>
+    <p> widthImage: {{ imgWidth }}</p>
+    <br>
+
+    <img [src]="urlImage" [width]="imgWidth">
+
+
+
+</div>

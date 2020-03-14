@@ -1,0 +1,24 @@
+<div class="container">
+    <h3>Two Way Data Binding</h3>
+    <hr>
+    <input type="text"
+    [value]="v1"
+    (input)="v1 = $event.target.value">
+    <p><b>Valor exemplo 1: </b> {{ v1 }}</p>
+    <hr>
+
+    <input type="text" [ngModel]="v2" (ngModelChange)="v2 = $event">
+    <p><b>Valor exemplo 2: </b> {{ v2 }}</p>
+    <hr>
+
+    <input type="text" bindon-ngModel="v3">
+    <p><b>Valor exemplo 3: </b> {{ v3 }}</p>
+    <hr>
+
+    <input type="text" [(ngModel)]="v4">
+    <p><b>Valor exemplo 4: </b> {{ v4 }}</p>
+    <hr>
+
+
+
+</div>

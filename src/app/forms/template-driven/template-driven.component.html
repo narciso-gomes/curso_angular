@@ -1,0 +1,45 @@
+<div class="container">
+    <h3>Template Driven</h3>
+
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+
+        <div class="form-group">
+            <select class="custom-select" name="estado" required [(ngModel)]="user.estado" #estado="ngModel" [ngClass]="{'is-invalid': estado.value==0 && estado.touched, 'is-valid': estado.value > 0}">
+                <option value="0">Selecione um estado</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <div class="invalid-feedback">Informe um estado</div>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.name" required
+                #name="ngModel" [ngClass]="{'is-invalid': !name.valid && name.touched, 'is-valid':name.valid}">
+            <!--<p>{{name.className}}</p>-->
+            <div class="invalid-feedback">
+                O campo nome é obrigatório
+            </div>
+
+            <div class="valid-feedback">
+                Muito bem!
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.email" required email
+                #email="ngModel" [ngClass]="{'is-invalid': !email.valid && email.touched, 'is-valid': email.valid}">
+            <!--<p>{{email.className}}</p>-->
+            <div class="invalid-feedback">
+                Obrigatório informar um email válido
+            </div>
+
+            <div class="valid-feedback">
+                Ok
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+    </form>
+</div>

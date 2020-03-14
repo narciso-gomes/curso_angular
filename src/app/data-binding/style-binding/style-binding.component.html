@@ -1,0 +1,16 @@
+<div class="container" id="main">
+    <h3>Style Binding</h3>
+    <hr>
+    <p>Select a color: </p>
+    <select #colorBackground class="form-control" (change)="0">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    <br>
+    <div [style.background]="colorBackground.value" style="width: 400px; height: 200px;">
+
+    </div>
+
+</div>

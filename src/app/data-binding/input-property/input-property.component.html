@@ -1,0 +1,10 @@
+<div class="container">
+    <h3>Input Properties</h3>
+    <hr>
+    <input type="text" [(ngModel)]="nome">
+    <br>
+    <br>
+
+    <i>Name shown in the child component:</i>
+    <app-child-input-property [nome]="nome"></app-child-input-property>
+</div>

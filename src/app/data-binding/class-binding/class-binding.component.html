@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Class Binding</h3>
+    <hr>
+    <p>Select class: </p>
+    <select #classValue class="form-control" (change)="0">
+        <option value="alert-success">Sucess</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">Danger</option>
+    </select>
+
+    <br>
+
+    <div class="alert {{ classValue.value }}" role="alert">
+        Style Binding exemple
+    </div>
+
+    <br>
+    <div class="alert" role="alert" [class.alert-success]="classValue.value == 'alert-success'">Success</div>
+    <div class="alert" role="alert" [class.alert-info]="classValue.value == 'alert-info'">Info</div>
+    <div class="alert" role="alert" [class.alert-warning]="classValue.value == 'alert-warning'">Warning</div>
+    <div class="alert" role="alert" [class.alert-danger]="classValue.value == 'alert-danger'">Danger</div>
+    
+    
+</div>

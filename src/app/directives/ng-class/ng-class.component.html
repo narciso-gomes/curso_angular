@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>NG CLASS</h2>
+
+    <p>
+        A diretiva estrutural ngClass é utilizada para substituir o property binding em casos de usos mais avançados.
+    </p>
+    <h3>Com property binding</h3>
+    <i class="fa-star" [class.far]="!liked" [class.fas]="liked" (click)="liked = !liked"></i>
+
+    <h3>Com ngClass</h3>
+    <i class="fa-star" 
+    [ngClass] = "{'far': !liked2, 'fas': liked2}"
+     (click)="liked2 = !liked2"></i>
+</div>

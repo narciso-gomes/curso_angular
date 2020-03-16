@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>NG STYLE</h2>
+    <p>A diretiva estrutural ngStyle é utilizada para substituir o style property binding em caso de usos mais avançados
+    </p>
+    <h3>Exemplo com property binding</h3>
+    <button class="btn" 
+    [style.backgroundColor]="ativo?'green':'white'" 
+    [style.color]="ativo?'white':'gray'"
+    [style.fontWeight]="ativo? 'bold': 'normal'"
+    [style.fontSize]="tamanhoFonte + 'px'"
+    (click)="ativo =! ativo"
+    >Exemplo</button>
+
+    <h3>Exemplo com ngStyle</h3>
+    <button class="btn" [ngStyle] = "{
+        'background-color': ativo?'blue':'white',
+        'color': ativo?'white':'gray',
+        'font-weight': ativo? 'bold': 'normal',
+        'font-size': tamanhoFonte+'px'
+    }" 
+    (click)="ativo =! ativo"
+    >Exemplo2</button>
+
+    <p>Tamanho da fonte</p>
+    <input type="number" [(ngModel)]="tamanhoFonte">
+</div>

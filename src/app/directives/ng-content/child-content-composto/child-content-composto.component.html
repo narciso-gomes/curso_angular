@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>
+        <ng-content select=".titulo"></ng-content>
+    </h2>
+    <div class="card">
+        <h5 class="card-header"><ng-content select=".titulo-cartao"></ng-content></h5>
+        <div class="card-body">
+        <ng-content select=".content"></ng-content>
+        </div>
+        <div class="card-footer">
+            <ng-content select=".footer"></ng-content>
+        </div>
+      </div>
+</div>

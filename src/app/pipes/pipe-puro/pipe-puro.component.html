@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Pipe Puro</h1>
+
+    <input type="text" placeholder="Pesquisar" [(ngModel)]="filtro"><br>
+    <input type="text" placeholder="Nome do Livro" [(ngModel)]="livro"><button (click)="adicionarLivro()">Adicionar</button>
+    <ul>
+        <li *ngFor="let livro of livros | filtroArray:filtro">
+            {{livro}}
+        </li>
+    </ul>
+</div>

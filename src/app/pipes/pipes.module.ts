@@ -5,13 +5,18 @@ import { PipesRoutingModule } from './pipes-routing.module';
 import { UsandoPipeComponent } from './usando-pipe/usando-pipe.component';
 import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.component';
 import { CamelCasePipe } from './pipe-customizado/camel-case.pipe';
+import { PipePuroComponent } from './pipe-puro/pipe-puro.component';
+import { FiltroArrayPipe } from './pipe-puro/filtro-array.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe],
+  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe, PipePuroComponent, FiltroArrayPipe],
   imports: [
     CommonModule,
-    PipesRoutingModule
+    PipesRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PipesModule { }

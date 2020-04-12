@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Pipe Inpuro</h1>
+
+    <input type="text" placeholder="Pesquisar" [(ngModel)]="filtro"><br>
+    <input type="text" placeholder="Cadastrar" [(ngModel)]="linguagem" > <button (click)="adicionarLinguagem()">Adicionar</button>
+
+    <ul>
+        <li *ngFor="let ling of linguagens | arrayFilter:filtro">
+            {{ling}}
+        </li>
+    </ul>
+</div>

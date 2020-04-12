@@ -54,6 +54,18 @@
           <a class="dropdown-item" href="#" [routerLink]="['directives/ngcontent']">ngContent</a>
         </div>
       </li>
+
+      <li class="nav-item dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+          Pipes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" [routerLink]="['pipes/usando-pipes']">Usando Pipes</a>
+          <a class="dropdown-item" href="#" [routerLink]="['pipes/pipe-customizado']">Pipe customizado</a>
+        </div>
+      </li>
+
     </ul>
   </div>
 </nav>

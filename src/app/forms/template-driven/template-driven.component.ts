@@ -8,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateDrivenComponent implements OnInit {
 
   user: any = {
-    estado: 0,
+    sexo: 0,
     name: '',
-    email: ''
+    email: '',
+    endereco: {
+      cep: '',
+      numero: 0,
+      complemento: '',
+      rua:'',
+      bairro:'',
+      cidade:'',
+      estado:''
+    }
   }
 
   constructor() { }

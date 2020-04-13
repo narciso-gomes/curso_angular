@@ -10,10 +10,11 @@ import { FiltroArrayPipe } from './pipe-puro/filtro-array.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipeInpuroComponent } from './pipe-inpuro/pipe-inpuro.component';
 import { ArrayFilterPipe } from './pipe-inpuro/array-filter.pipe';
+import { UsoFilterCorretoComponent } from './uso-filter-correto/uso-filter-correto.component';
 
 
 @NgModule({
-  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe, PipePuroComponent, FiltroArrayPipe, PipeInpuroComponent, ArrayFilterPipe],
+  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe, PipePuroComponent, FiltroArrayPipe, PipeInpuroComponent, ArrayFilterPipe, UsoFilterCorretoComponent],
   imports: [
     CommonModule,
     PipesRoutingModule,

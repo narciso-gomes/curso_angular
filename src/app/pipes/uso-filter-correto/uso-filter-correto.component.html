@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Uso correto de filtro de dados</h1>
+    <input placeholder="Pesquisar" [(ngModel)]="nomeFiltro"><br>
+    <input type="text" placeholder="Novo registro" [(ngModel)]="nome"> <button (click)="adicionarNome()">Adicionar</button>
+
+    <br>
+    <br>
+    <ul>
+        <li *ngFor="let nome of listaNomesFiltrados()">
+            {{nome}}
+        </li>
+    </ul>
+</div>

@@ -11,10 +11,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipeInpuroComponent } from './pipe-inpuro/pipe-inpuro.component';
 import { ArrayFilterPipe } from './pipe-inpuro/array-filter.pipe';
 import { UsoFilterCorretoComponent } from './uso-filter-correto/uso-filter-correto.component';
+import { PipeAsyncComponent } from './pipe-async/pipe-async.component';
 
 
 @NgModule({
-  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe, PipePuroComponent, FiltroArrayPipe, PipeInpuroComponent, ArrayFilterPipe, UsoFilterCorretoComponent],
+  declarations: [UsandoPipeComponent, PipeCustomizadoComponent, CamelCasePipe, PipePuroComponent, FiltroArrayPipe, PipeInpuroComponent, ArrayFilterPipe, UsoFilterCorretoComponent, PipeAsyncComponent],
   imports: [
     CommonModule,
     PipesRoutingModule,

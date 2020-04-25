@@ -5,6 +5,7 @@ import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.co
 import { PipePuroComponent } from './pipe-puro/pipe-puro.component';
 import { PipeInpuroComponent } from './pipe-inpuro/pipe-inpuro.component';
 import { UsoFilterCorretoComponent } from './uso-filter-correto/uso-filter-correto.component';
+import { PipeAsyncComponent } from './pipe-async/pipe-async.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'pipe-customizado', component: PipeCustomizadoComponent },
   { path: 'pipe-puro', component: PipePuroComponent},
   { path: 'pipe-inpuro', component: PipeInpuroComponent },
-  { path: 'uso-filter-correto', component: UsoFilterCorretoComponent}
+  { path: 'uso-filter-correto', component: UsoFilterCorretoComponent},
+  { path: 'pipe-async', component: PipeAsyncComponent}
 ];
 
 @NgModule({

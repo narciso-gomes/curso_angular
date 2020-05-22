@@ -1,0 +1,23 @@
+<div class="container">
+    <h3>Template Driven</h3>
+
+    <form [formGroup]="formulario">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" name="name"
+                placeholder="Nome" formControlName="nome">
+    
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email"
+                placeholder="Email" formControlName="email">
+        </div>
+
+       
+        <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Submit</button>
+    </form>
+
+    <app-form-debug [form]="formulario"></app-form-debug>
+</div>

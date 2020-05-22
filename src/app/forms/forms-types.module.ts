@@ -5,6 +5,7 @@ import { FormsModule }   from '@angular/forms';
 
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { FormDebugComponent } from './form-debug/form-debug.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { FormDebugComponent } from './form-debug/form-debug.component';
   imports: [
     CommonModule,
     FormsRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class FormsTypesModule { }

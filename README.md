@@ -1,2 +1,3 @@
 # PROJETO DE TESTE E PRÁTICA DO CURSO DE ANGULAR DA PROFESSORA LOYANE GRONER
 `<https://www.youtube.com/watch?v=tPOMG0D57S0&list=RDCMUCqQn92noBhY9VKQy4xCHPsg&start_radio=1&t=10>`
+

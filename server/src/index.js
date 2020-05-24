@@ -11,18 +11,18 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const corsOption = {
     origin: '*',
-    optionsSuccessStatu: 200
+    optionsSuccessStatus: 200
 }
 
 const multipartMiddleware = multipart({ uploadDir: './uploads' })
 app.post('/upload', multipartMiddleware, (req, res) => {
     const files = req.files
     console.log(files)
-    res.json({ message: files })
+    return res.json({ message: files })
 })
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Success' })
+    return res.json({ message: 'Success' })
 })
 
 app.use((err, req, res, next) => res.json({ error: err.message }))

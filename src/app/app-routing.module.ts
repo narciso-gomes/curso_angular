@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'pipes',
     loadChildren: () => import('./pipes/pipes.module').then(m => m.PipesModule)
+  },
+  { 
+    path: 'uploads',
+    loadChildren: () => import('./uploads/uploads.module').then(m => m.UploadsModule)
   }
 ];
 

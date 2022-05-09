@@ -11,6 +11,7 @@ import { ChildContentCompostoComponent } from "./ng-content/child-content-compos
 import { CustomDirectivesComponent } from "./custom-directives/custom-directives.component";
 import { BackgroundColorDirective } from './custom-directives/directives/background-color.directive';
 import { HighlightMouseDirective } from './custom-directives/directives/highlight-mouse.directive';
+import { RemoveAccentsDirective } from './custom-directives/directives/remove-accents.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HighlightMouseDirective } from './custom-directives/directives/highligh
     CustomDirectivesComponent,
     BackgroundColorDirective,
     HighlightMouseDirective,
+    RemoveAccentsDirective,
   ],
   imports: [CommonModule, DirectiveRoutingModule, FormsModule],
 })

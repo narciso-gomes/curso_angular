@@ -25,7 +25,13 @@ export class HighlightMouseDirective {
     this.backgroundColor = "white";
   }
 
-  @HostBinding("style.backgroundColor") backgroundColor: string;
+  //  @HostBinding("style.backgroundColor") backgroundColor: string;
+
+  @HostBinding("style.backgroundColor") get setColor() {
+    return this.backgroundColor;
+  }
+
+  private backgroundColor: string;
 
   constructor() {} // private element: ElementRef, private renderer: Renderer2
 }

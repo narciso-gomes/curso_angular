@@ -9,7 +9,7 @@ import { NgContentComponent } from "./ng-content/ng-content.component";
 import { ChildComponentComponent } from "./ng-content/child-component/child-component.component";
 import { ChildContentCompostoComponent } from "./ng-content/child-content-composto/child-content-composto.component";
 import { CustomDirectivesComponent } from "./custom-directives/custom-directives.component";
-import { FundoAmareloDirective } from "./custom-directives/directives/fundo-amarelo.directive";
+import { BackgroundColorDirective } from './custom-directives/directives/background-color.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { FundoAmareloDirective } from "./custom-directives/directives/fundo-amar
     ChildComponentComponent,
     ChildContentCompostoComponent,
     CustomDirectivesComponent,
-    FundoAmareloDirective,
+    BackgroundColorDirective,
   ],
   imports: [CommonModule, DirectiveRoutingModule, FormsModule],
 })

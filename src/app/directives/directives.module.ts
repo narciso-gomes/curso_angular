@@ -10,6 +10,7 @@ import { ChildComponentComponent } from "./ng-content/child-component/child-comp
 import { ChildContentCompostoComponent } from "./ng-content/child-content-composto/child-content-composto.component";
 import { CustomDirectivesComponent } from "./custom-directives/custom-directives.component";
 import { BackgroundColorDirective } from './custom-directives/directives/background-color.directive';
+import { HighlightMouseDirective } from './custom-directives/directives/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BackgroundColorDirective } from './custom-directives/directives/backgro
     ChildContentCompostoComponent,
     CustomDirectivesComponent,
     BackgroundColorDirective,
+    HighlightMouseDirective,
   ],
   imports: [CommonModule, DirectiveRoutingModule, FormsModule],
 })
